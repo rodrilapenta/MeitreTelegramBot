@@ -5,7 +5,7 @@ Para funcionar requiere de un archivo `.env` con las siguientes variables (se pr
 
 - `MEITRES`: una lista JSON con cada uno de los lugares sobre los cuales consultar disponibilidad; de cada uno se deberá proveer:
     - `active(true/false)`: flag para apagar/encender el polling sobre el elemento
-	- `id`: id del lugar en Meitre; para conocer el id de algún lugar en particular, se debe abrir el sitio web del lugar, ir a consultar turnos y revisar en la consola (en Network) un request con la siguiente estructura →  https://api.meitre.com/api/calendar-availability-new/**ID DEL LUGAR**/CANTIDAD DE PERSONAS/LUNCH O DINNER
+	- `id`: id del lugar en Meitre; para conocer el id de algún lugar en particular, se debe abrir el sitio web del lugar, ir a consultar turnos y revisar en la consola (en Network) un request con la siguiente estructura → [https://api.meitre.com/api/calendar-availability-new/**ID DEL LUGAR**/CANTIDAD DE PERSONAS/LUNCH O DINNER](https://api.meitre.com/api/calendar-availability-new/ID-DEL-LUGAR/CANTIDAD-DE-PERSONAS/LUNCH-O-DINNER)
 	- `name`: el nombre del lugar, para usarse al enviar la notificación
 	- `link`: la URL del lugar, simplemente para enviar el link en la notificación y facilitar al usuario el ingreso haciendo click
 	- `sendWhenNotAvailable(true/false)`: true para que el bot envíe notificación también cuando no hay disponibilidad, false para lo opuesto
